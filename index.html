@@ -1,148 +1,864 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Suryansh Singh: B.Tech Information Technology student at MIT Manipal, sports and technology enthusiast, and a cricket player with state-level experience.">
-  <meta name="theme-color" content="#191b19">
-  <title>Suryansh Singh | Personal Profile</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Suryansh Singh | B.Tech IT Student & Athlete</title>
+  <meta name="description" content="Personal portfolio of Suryansh Singh: B.Tech Information Technology student at MIT Manipal, state-level cricket player, and software enthusiast.">
+  <meta name="author" content="Suryansh Singh">
+  <meta name="keywords" content="Suryansh Singh, MIT Manipal, Information Technology, Portfolio, State Level Cricket, Web Development, Software Engineer">
+  <meta name="theme-color" content="#0b0f17">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://suryansh102-singh.github.io/">
+  <meta property="og:title" content="Suryansh Singh | B.Tech IT & State-Level Cricketer">
+  <meta property="og:description" content="Pursuing Information Technology at MIT Manipal. Driven by sport, curious about technology and systems.">
+  <meta property="og:image" content="assets/profile.png">
+
+  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts: Plus Jakarta Sans (body/UI), Instrument Serif (editorial display accent), JetBrains Mono (tech tags) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Accessible Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="container nav-row">
-      <a class="brand" href="#home" aria-label="Suryansh Singh, home">ss<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#interests">Interests</a>
-        <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+  <!-- Floating Glass Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#home" aria-label="Suryansh Singh Home">
+        <span class="brand-monogram">ss</span><span class="brand-dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Project</a></li>
+          <li><a class="nav-link" href="#achievements">Athletics</a></li>
+          <li><a class="nav-link" href="#interests">Interests</a></li>
+        </ul>
       </nav>
+
+      <!-- Header Utilities: Theme Toggle & Quick Connect -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle Theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a class="btn btn-sm btn-contact" href="#contact">
+          <span>Let's Talk</span>
+          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 12L12 4M12 4H6M12 4V10"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> STUDENT. SPORTS ENTHUSIAST. TECH EXPLORER.</p>
-          <p class="hello">Hello, I'm</p>
-          <h1 id="hero-title">Suryansh<br><span>Singh.</span></h1>
-          <p class="hero-role">B.Tech in Information Technology <span aria-hidden="true">/</span> MIT Manipal</p>
-          <p class="hero-description">Driven by sport. Curious about technology.<br>Interested in the world and what shapes it.</p>
-          <a class="hero-achievement" href="#achievements"><span aria-hidden="true">↗</span> Played cricket at state level</a>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#about">Explore my profile <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="https://github.com/Suryansh102-singh" target="_blank" rel="noopener noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span class="status-text">B.Tech IT @ MIT Manipal &bull; State-Level Cricketer</span>
+          </div>
+
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title" id="hero-title">
+            Suryansh<br>
+            <span class="gradient-text">Singh.</span>
+          </h1>
+
+          <p class="hero-role">
+            <strong>B.Tech in Information Technology</strong>
+            <span class="separator" aria-hidden="true">/</span>
+            <span>Manipal Institute of Technology</span>
+          </p>
+
+          <p class="hero-bio">
+            Driven by the discipline of sport and fueled by curiosity for technology. 
+            Building resilient software foundations while exploring the systems that shape the modern world.
+          </p>
+
+          <!-- Quick Highlight Badges -->
+          <div class="hero-tags">
+            <a class="hero-tag" href="#achievements">
+              <span class="hero-tag-icon">🏏</span>
+              <span>State-Level Cricket Player</span>
+            </a>
+            <a class="hero-tag" href="#education">
+              <span class="hero-tag-icon">🎓</span>
+              <span>Information Technology</span>
+            </a>
+            <a class="hero-tag" href="#interests">
+              <span class="hero-tag-icon">🌐</span>
+              <span>Geopolitics &amp; Systems</span>
+            </a>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-cta-group">
+            <a class="btn btn-primary" href="#about">
+              <span>Explore My Profile</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M8 3v10M3 8l5 5 5-5"/>
+              </svg>
+            </a>
+            <a class="btn btn-outline" href="https://github.com/Suryansh102-singh" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
 
-        <div class="portrait-area">
-          <span class="portrait-orbit" aria-hidden="true"></span>
-          <figure class="portrait-card">
-            <div class="portrait-topline"><span>ON THE FIELD &amp; BEYOND</span><span aria-hidden="true">✳</span></div>
-            <img class="profile-image" src="assets/profile.png" alt="Portrait of Suryansh Singh" width="498" height="502" fetchpriority="high">
-            <figcaption><span>Suryansh Singh</span><span class="portrait-location">Manipal, India <span aria-hidden="true">↗</span></span></figcaption>
-          </figure>
-          <p class="portrait-tag"><span aria-hidden="true">✳</span> A passion for sport &amp; technology</p>
+        <!-- Hero Portrait Area with Modern Glass Presentation -->
+        <div class="hero-visual">
+          <div class="portrait-card-wrapper">
+            <div class="portrait-halo" aria-hidden="true"></div>
+            <div class="portrait-card">
+              <div class="portrait-card-header">
+                <span class="portrait-meta-title">ON THE FIELD &amp; BEYOND</span>
+                <span class="card-sparkle" aria-hidden="true">✦</span>
+              </div>
+
+              <div class="portrait-frame">
+                <img 
+                  class="profile-img" 
+                  src="assets/profile.png" 
+                  alt="Portrait photograph of Suryansh Singh" 
+                  width="420" 
+                  height="420" 
+                  fetchpriority="high"
+                >
+              </div>
+
+              <div class="portrait-card-footer">
+                <div class="portrait-info">
+                  <span class="portrait-name">Suryansh Singh</span>
+                  <span class="portrait-sub">B.Tech IT Student</span>
+                </div>
+                <div class="portrait-badge">
+                  <span class="pin-icon" aria-hidden="true">📍</span>
+                  <span>Manipal, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Pill -->
+            <div class="floating-pill">
+              <span class="pill-spark" aria-hidden="true">⚡</span>
+              <span>Sporting Discipline &bull; Tech Explorer</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container hero-bottom"><span>SPORTS · TECHNOLOGY · GEOPOLITICS</span><a href="#about">A little more about me <span aria-hidden="true">↓</span></a></div>
+
+      <!-- Hero Bottom Strip -->
+      <div class="hero-strip">
+        <div class="container hero-strip-inner">
+          <div class="strip-items">
+            <span class="strip-item">SPORTS &bull; CRICKET</span>
+            <span class="strip-dot">&bull;</span>
+            <span class="strip-item">INFORMATION TECHNOLOGY</span>
+            <span class="strip-dot">&bull;</span>
+            <span class="strip-item">GEOPOLITICS &bull; SYSTEMS</span>
+          </div>
+          <a class="strip-link" href="#about">
+            <span>Discover my journey</span>
+            <span class="strip-arrow" aria-hidden="true">&darr;</span>
+          </a>
+        </div>
+      </div>
     </section>
 
+    <!-- SECTION 01: ABOUT ME -->
     <section class="section about-section" id="about" aria-labelledby="about-title">
       <div class="container">
-        <p class="section-label"><span>01</span> ABOUT ME</p>
+        <div class="section-badge">
+          <span class="badge-num">01</span>
+          <span class="badge-title">ABOUT ME</span>
+        </div>
+
         <div class="about-grid">
-          <h2 id="about-title">A sporting spirit.<br>A <span class="serif-accent">curious mind.</span></h2>
-          <div class="about-copy">
-            <p class="lead">I'm Suryansh Singh, currently pursuing a B.Tech in Information Technology at Manipal Institute of Technology.</p>
-            <p>Sports are a big part of who I am. I've played cricket at state level, and I value the practice, teamwork, and discipline that come with the game.</p>
-            <p>I'm also a tech enthusiast. I enjoy exploring how technology works and connecting what I learn in class with practical projects. Beyond sports and technology, I like following geopolitics and understanding the events that shape our world.</p>
-            <div class="about-note"><span aria-hidden="true">↗</span><p>From the cricket field to the classroom, I enjoy learning, improving, and taking on a challenge.</p></div>
+          <div class="about-heading-col">
+            <h2 class="section-title" id="about-title">
+              A sporting spirit.<br>
+              A <span class="serif-accent">curious mind.</span>
+            </h2>
+            <div class="about-quote-box">
+              <span class="quote-symbol" aria-hidden="true">&ldquo;</span>
+              <p class="quote-text">From the cricket pitch to computer systems, progress is built on daily practice, deliberate patience, and teamwork.</p>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <p class="lead-text">
+              I'm <strong>Suryansh Singh</strong>, an Information Technology undergraduate at <strong>Manipal Institute of Technology (MIT Manipal)</strong>.
+            </p>
+            <p>
+              Sports have shaped the core of who I am. Having competed in <strong>state-level cricket</strong>, I've lived through the intensity of pressure moments, the humility of rigorous training, and the indispensable power of working as a synchronized team.
+            </p>
+            <p>
+              That same mindset drives my fascination with computing. Whether analyzing algorithms, exploring database architecture, or connecting full-stack services, I look for elegance, speed, and real-world utility.
+            </p>
+            <p>
+              Beyond the terminal and the pitch, I am an avid follower of <strong>global affairs and geopolitics</strong> &mdash; understanding how international policy, technology supply chains, and history converge to define the future.
+            </p>
+
+            <!-- Three Pillars Grid -->
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <span class="pillar-icon" aria-hidden="true">🏏</span>
+                <h3 class="pillar-title">Athletic Resilience</h3>
+                <p class="pillar-desc">State-level cricket competition taught me consistency and composure under high stakes.</p>
+              </div>
+              <div class="pillar-card">
+                <span class="pillar-icon" aria-hidden="true">💻</span>
+                <h3 class="pillar-title">Technical Curiosity</h3>
+                <p class="pillar-desc">Translating classroom concepts into functional, scalable software applications.</p>
+              </div>
+              <div class="pillar-card">
+                <span class="pillar-icon" aria-hidden="true">🌍</span>
+                <h3 class="pillar-title">Global Perspective</h3>
+                <p class="pillar-desc">Analyzing macro trends, international trade corridors, and geopolitical developments.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SECTION 02: EDUCATION -->
     <section class="section education-section" id="education" aria-labelledby="education-title">
       <div class="container">
-        <p class="section-label"><span>02</span> EDUCATION</p>
-        <div class="section-heading">
-          <h2 id="education-title">Where I'm <span class="serif-accent">learning.</span></h2>
-          <p>Building a foundation, one concept at a time.</p>
+        <div class="section-badge">
+          <span class="badge-num">02</span>
+          <span class="badge-title">ACADEMIC FOUNDATION</span>
         </div>
-        <article class="education-card">
-          <div class="education-status"><span class="status-dot" aria-hidden="true"></span> CURRENTLY PURSUING</div>
-          <div class="education-main">
-            <div><p class="education-degree">Bachelor of Technology</p><h3>Information Technology</h3><p class="institution">Manipal Institute of Technology</p><p class="education-location">MAHE · Manipal, Karnataka, India</p></div>
-            <span class="education-mark" aria-hidden="true">IT<span>.</span></span>
+
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" id="education-title">Where I'm <span class="serif-accent">learning.</span></h2>
+            <p class="section-subtitle">Building deep foundational knowledge in computer systems, data, and software architecture.</p>
           </div>
-          <div class="coursework"><p>AREAS OF STUDY</p><ul class="tags"><li>Data Structures</li><li>Operating Systems</li><li>Computer Networks</li><li>Databases</li><li>Web Technology</li></ul></div>
+          <div class="education-meta-badge">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Active Student</span>
+          </div>
+        </div>
+
+        <article class="education-card">
+          <div class="education-topline">
+            <span class="edu-status-pill">CURRENTLY PURSUING</span>
+            <span class="edu-period">Bachelor of Technology &bull; B.Tech</span>
+          </div>
+
+          <div class="education-body">
+            <div class="education-info">
+              <p class="edu-field">Major Specialization</p>
+              <h3 class="edu-degree">Information Technology</h3>
+              <p class="edu-institution">Manipal Institute of Technology</p>
+              <p class="edu-campus">Manipal Academy of Higher Education (MAHE) &bull; Karnataka, India</p>
+            </div>
+            
+            <div class="edu-graphic" aria-hidden="true">
+              <span class="edu-monogram">IT<span class="edu-accent">.</span></span>
+            </div>
+          </div>
+
+          <div class="education-coursework">
+            <div class="coursework-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cw-icon" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+              <span>KEY AREAS OF STUDY &amp; CORE COURSEWORK</span>
+            </div>
+            <ul class="course-tags">
+              <li class="course-tag">Data Structures &amp; Algorithms</li>
+              <li class="course-tag">Operating Systems</li>
+              <li class="course-tag">Computer Networks</li>
+              <li class="course-tag">Database Management Systems (DBMS)</li>
+              <li class="course-tag">Web Technology</li>
+              <li class="course-tag">Object-Oriented Programming</li>
+              <li class="course-tag">Software Engineering</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- SECTION 03: SKILLS -->
     <section class="section skills-section" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <p class="section-label"><span>03</span> SKILLS</p>
-        <div class="section-heading"><h2 id="skills-title">My growing <span class="serif-accent">toolbox.</span></h2><p>Skills I'm developing through coursework and hands-on projects.</p></div>
-        <div class="skill-grid">
-          <article class="skill-card"><div class="card-top"><span class="card-icon" aria-hidden="true">&lt;/&gt;</span><span class="card-number" aria-hidden="true">01</span></div><h3>Programming</h3><p>Writing programs, understanding logic, and working through problems.</p><ul class="tags"><li>C</li><li>Java</li></ul></article>
-          <article class="skill-card"><div class="card-top"><span class="card-icon" aria-hidden="true">{ }</span><span class="card-number" aria-hidden="true">02</span></div><h3>Web development</h3><p>Creating structured pages and responsive, readable interfaces.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
-          <article class="skill-card"><div class="card-top"><svg class="card-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><ellipse cx="16" cy="7" rx="11" ry="4"/><path d="M5 7v9c0 2.2 4.9 4 11 4s11-1.8 11-4V7M5 16v9c0 2.2 4.9 4 11 4s11-1.8 11-4v-9"/></svg><span class="card-number" aria-hidden="true">03</span></div><h3>Databases</h3><p>Organizing information with relational models and useful queries.</p><ul class="tags"><li>SQL</li><li>MySQL</li><li>ER diagrams</li></ul></article>
-          <article class="skill-card"><div class="card-top"><svg class="card-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="3" y="3" width="9" height="9" rx="2"/><rect x="20" y="20" width="9" height="9" rx="2"/><path d="M12 7h12v13M7 12v12h13"/></svg><span class="card-number" aria-hidden="true">04</span></div><h3>Problem solving</h3><p>Breaking larger problems into clear steps and choosing the right approach.</p><ul class="tags"><li>Data structures</li><li>Algorithms</li></ul></article>
-          <article class="skill-card"><div class="card-top"><span class="card-icon" aria-hidden="true">&gt;_</span><span class="card-number" aria-hidden="true">05</span></div><h3>Systems &amp; networks</h3><p>Exploring processes, memory management, and how computers communicate.</p><ul class="tags"><li>Unix</li><li>Shell scripting</li><li>Networking</li></ul></article>
-          <article class="skill-card"><div class="card-top"><svg class="card-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="9" cy="6" r="3"/><circle cx="9" cy="26" r="3"/><circle cx="24" cy="8" r="3"/><path d="M9 9v14M24 11v3c0 5-15 5-15 9"/></svg><span class="card-number" aria-hidden="true">06</span></div><h3>Developer tools</h3><p>Keeping projects organized, tracking changes, and learning from code.</p><ul class="tags"><li>Git</li><li>GitHub</li></ul></article>
+        <div class="section-badge">
+          <span class="badge-num">03</span>
+          <span class="badge-title">TECHNICAL TOOLBOX</span>
+        </div>
+
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" id="skills-title">My growing <span class="serif-accent">toolbox.</span></h2>
+            <p class="section-subtitle">Core competencies developed through rigorous academic coursework, laboratories, and practical projects.</p>
+          </div>
+        </div>
+
+        <!-- 6 Modern Skill Cards Grid -->
+        <div class="skills-grid">
+          <!-- Skill Card 1: Programming -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="skill-number">01</span>
+            </div>
+            <h3 class="skill-name">Programming</h3>
+            <p class="skill-desc">Strong foundation in structured programming, memory concepts, and object-oriented logic.</p>
+            <ul class="skill-tags">
+              <li class="tag">C</li>
+              <li class="tag">Java</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 2: Web Development -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span class="skill-number">02</span>
+            </div>
+            <h3 class="skill-name">Web Development</h3>
+            <p class="skill-desc">Crafting responsive, standards-compliant, and accessible interfaces with modern full-stack workflows.</p>
+            <ul class="skill-tags">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">JavaScript (ES6+)</li>
+              <li class="tag">React</li>
+              <li class="tag">Node.js</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 3: Databases -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <span class="skill-number">03</span>
+            </div>
+            <h3 class="skill-name">Databases &amp; Modeling</h3>
+            <p class="skill-desc">Designing normalized schemas, relational structures, and writing performant SQL queries.</p>
+            <ul class="skill-tags">
+              <li class="tag">SQL</li>
+              <li class="tag">MySQL</li>
+              <li class="tag">ER Diagrams</li>
+              <li class="tag">Normalization</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 4: Problem Solving -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="skill-number">04</span>
+            </div>
+            <h3 class="skill-name">Problem Solving</h3>
+            <p class="skill-desc">Breaking down complex algorithmic problems into modular, clean, and optimal solutions.</p>
+            <ul class="skill-tags">
+              <li class="tag">Data Structures</li>
+              <li class="tag">Algorithms</li>
+              <li class="tag">Time Complexity</li>
+              <li class="tag">Logic Design</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 5: Systems & Networks -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <span class="skill-number">05</span>
+            </div>
+            <h3 class="skill-name">Systems &amp; Networks</h3>
+            <p class="skill-desc">Understanding process synchronization, memory management, and socket communication.</p>
+            <ul class="skill-tags">
+              <li class="tag">Unix / Linux</li>
+              <li class="tag">Shell Scripting</li>
+              <li class="tag">TCP/IP</li>
+              <li class="tag">OS Concepts</li>
+            </ul>
+          </article>
+
+          <!-- Skill Card 6: Developer Tools -->
+          <article class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="skill-svg" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <span class="skill-number">06</span>
+            </div>
+            <h3 class="skill-name">Developer Tools</h3>
+            <p class="skill-desc">Version control, collaborative workflows, continuous deployment, and testing tools.</p>
+            <ul class="skill-tags">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">VS Code</li>
+              <li class="tag">GitHub Pages</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- SECTION 04: FEATURED PROJECT -->
     <section class="section project-section" id="projects" aria-labelledby="project-title">
       <div class="container">
-        <p class="section-label"><span>04</span> A PROJECT IN PRACTICE</p>
+        <div class="section-badge">
+          <span class="badge-num">04</span>
+          <span class="badge-title">PROJECT IN PRACTICE</span>
+        </div>
+
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" id="project-title">Featured <span class="serif-accent">software work.</span></h2>
+            <p class="section-subtitle">Bridging user-facing interfaces with robust database architecture and business logic.</p>
+          </div>
+        </div>
+
         <article class="project-card">
-          <div class="project-visual" aria-hidden="true"><span class="project-visual-label">SOFTWARE × HEALTHCARE</span><svg viewBox="0 0 260 160" fill="none"><rect x="44" y="17" width="172" height="112" rx="10"/><path d="M44 43h172M108 129v15m44-15v15M94 144h72"/><path class="pulse" d="M67 87h30l15-25 19 44 16-31 11 12h35"/><circle cx="58" cy="30" r="2"/><circle cx="67" cy="30" r="2"/></svg><span class="project-visual-foot">BUILT TO SOLVE REAL PROBLEMS</span></div>
-          <div class="project-copy"><p class="eyebrow">FEATURED PROJECT</p><h2 id="project-title">E-Healthcare<br>Management System</h2><p>A full-stack project covering patient records, doctor scheduling, clinical visits, billing, and SQL reporting. An opportunity to connect a user interface with meaningful data.</p><ul class="tags"><li>React</li><li>Node.js</li><li>SQL</li></ul><a class="project-link" href="https://github.com/Suryansh102-singh/E-HEALTHCARE-MANAGEMENT-SYSTEM" target="_blank" rel="noopener noreferrer">Explore the repository <span aria-hidden="true">↗</span></a></div>
+          <!-- Visual / Dashboard Simulation Column -->
+          <div class="project-visual">
+            <div class="project-visual-header">
+              <div class="visual-dots">
+                <span class="dot red-dot"></span>
+                <span class="dot yellow-dot"></span>
+                <span class="dot green-dot"></span>
+              </div>
+              <span class="visual-tag">HEALTHCARE &bull; FULL-STACK</span>
+            </div>
+
+            <div class="project-graphic" aria-hidden="true">
+              <!-- ECG / Health Graphic -->
+              <svg class="ecg-svg" viewBox="0 0 320 180" fill="none">
+                <rect x="20" y="20" width="280" height="140" rx="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" class="dash-border"/>
+                <!-- Grid Lines -->
+                <line x1="20" y1="55" x2="300" y2="55" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.2"/>
+                <line x1="20" y1="90" x2="300" y2="90" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.2"/>
+                <line x1="20" y1="125" x2="300" y2="125" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.2"/>
+                <!-- Vital Pulse -->
+                <path class="pulse-line" d="M30 90h40l15-30 20 60 18-45 12 25 15-10h60l12-25 15 35 12-20h50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Pulsing Node -->
+                <circle cx="105" cy="120" r="4" class="pulse-node"/>
+              </svg>
+              <div class="graphic-caption">
+                <span class="caption-metric">PATIENT RECORDS &bull; CLINICAL SCHEDULING</span>
+              </div>
+            </div>
+
+            <div class="project-visual-footer">
+              <span class="footer-badge">ARCHITECTURE &bull; RELATIONAL SQL</span>
+            </div>
+          </div>
+
+          <!-- Project Copy & Links Column -->
+          <div class="project-copy">
+            <div class="project-meta-pill">PRODUCTION GRADE PROJECT</div>
+            <h3 class="project-heading">E-Healthcare Management System</h3>
+            
+            <p class="project-summary">
+              A comprehensive full-stack healthcare platform engineered to digitize hospital operations. 
+              The system manages patient electronic medical records (EMR), facilitates seamless doctor appointment scheduling, records clinical diagnoses, calculates automated billing, and generates analytical SQL reports.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-bullet">&check;</span>
+                <span>Relational SQL database with strict foreign keys &amp; transaction management.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet">&check;</span>
+                <span>Dynamic frontend interface connecting clinical scheduling with patient histories.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet">&check;</span>
+                <span>Role-based portal structure for patients, healthcare providers, and administrators.</span>
+              </div>
+            </div>
+
+            <div class="project-stack">
+              <span class="stack-label">TECH STACK:</span>
+              <ul class="stack-list">
+                <li class="stack-tag">React</li>
+                <li class="stack-tag">Node.js</li>
+                <li class="stack-tag">SQL / MySQL</li>
+                <li class="stack-tag">REST APIs</li>
+              </ul>
+            </div>
+
+            <div class="project-links">
+              <a class="btn btn-primary" href="https://github.com/Suryansh102-singh/E-HEALTHCARE-MANAGEMENT-SYSTEM" target="_blank" rel="noopener noreferrer">
+                <span>Explore Repository</span>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 12L12 4M12 4H6M12 4V10"/>
+                </svg>
+              </a>
+              <span class="repo-meta">Open-source on GitHub</span>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- SECTION 05: ACHIEVEMENTS & ATHLETICS -->
     <section class="section achievement-section" id="achievements" aria-labelledby="achievement-title">
       <div class="container">
-        <p class="section-label"><span>05</span> ACHIEVEMENTS</p>
+        <div class="section-badge">
+          <span class="badge-num">05</span>
+          <span class="badge-title">HONORS &amp; ATHLETICS</span>
+        </div>
+
         <article class="achievement-card">
-          <div class="achievement-emblem" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><path d="M38 24h44v22c0 18-10 30-22 30S38 64 38 46V24ZM60 76v18M42 96h36M38 32H24v9c0 15 7 23 22 23M82 32h14v9c0 15-7 23-22 23"/><path d="m60 34 4.8 9.6 10.6 1.5-7.7 7.5 1.8 10.5L60 58l-9.5 5.1 1.8-10.5-7.7-7.5 10.6-1.5L60 34Z"/></svg></div>
-          <div><p class="eyebrow">CRICKET · STATE LEVEL</p><h2 id="achievement-title">Taking my game<br>to the <span class="serif-accent">next level.</span></h2><p>I've played cricket at state level — an achievement that reflects my passion for sports and commitment to the game.</p><p class="achievement-values">Practice. Teamwork. Discipline.</p></div>
+          <div class="achievement-crest" aria-hidden="true">
+            <div class="crest-ring">
+              <svg viewBox="0 0 100 100" fill="none" class="trophy-svg">
+                <!-- Trophy Base -->
+                <path d="M30 84h40M50 68v16" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <!-- Cup Body -->
+                <path d="M32 20h36v24c0 14-8 24-18 24s-18-10-18-24V20z" stroke="currentColor" stroke-width="4" fill="none"/>
+                <!-- Handles -->
+                <path d="M32 26H22c-5 0-9 4-9 9 0 9 7 15 19 15M68 26h10c5 0 9 4 9 9 0 9-7 15-19 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <!-- Star inside cup -->
+                <polygon points="50,28 53,37 62,37 55,42 58,51 50,46 42,51 45,42 38,37 47,37" fill="currentColor"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="achievement-details">
+            <div class="achievement-eyebrow">
+              <span class="medal-icon">🏏</span>
+              <span>COMPETITIVE CRICKET &bull; STATE LEVEL</span>
+            </div>
+            
+            <h2 class="achievement-title" id="achievement-title">
+              Taking my game to the <span class="serif-accent">next level.</span>
+            </h2>
+
+            <p class="achievement-desc">
+              Competing at state-level cricket has been one of my defining life experiences. 
+              The relentless training, tactical match awareness, handling pressure situations, and supporting teammates have deeply shaped my character and work ethic.
+            </p>
+
+            <div class="achievement-values-grid">
+              <div class="value-item">
+                <span class="value-check">&check;</span>
+                <div>
+                  <strong>Consistent Practice</strong>
+                  <p>Mastery is achieved through daily unglamorous reps and discipline.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-check">&check;</span>
+                <div>
+                  <strong>Team Coordination</strong>
+                  <p>Clear communication and trust elevate group outcomes above individual glory.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-check">&check;</span>
+                <div>
+                  <strong>Poise Under Pressure</strong>
+                  <p>Staying calm and analytical when circumstances are fast-moving and tight.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- SECTION 06: INTERESTS & HOBBIES -->
     <section class="section interests-section" id="interests" aria-labelledby="interests-title">
       <div class="container">
-        <p class="section-label"><span>06</span> INTERESTS &amp; HOBBIES</p>
-        <div class="section-heading"><h2 id="interests-title">Beyond the <span class="serif-accent">classroom.</span></h2><p>A few things that keep me curious and moving.</p></div>
-        <div class="interest-grid">
-          <article class="interest-card"><span class="interest-number" aria-hidden="true">01 /</span><h3>Sports &amp; cricket</h3><p>Playing, staying active, and enjoying the challenge and teamwork of sport.</p></article>
-          <article class="interest-card"><span class="interest-number" aria-hidden="true">02 /</span><h3>Technology</h3><p>Exploring new tools, understanding how systems work, and building with code.</p></article>
-          <article class="interest-card"><span class="interest-number" aria-hidden="true">03 /</span><h3>Geopolitics</h3><p>Following global affairs and exploring how countries, history, and current events connect.</p></article>
+        <div class="section-badge">
+          <span class="badge-num">06</span>
+          <span class="badge-title">PASSIONS &amp; PERSPECTIVE</span>
+        </div>
+
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" id="interests-title">Beyond the <span class="serif-accent">classroom.</span></h2>
+            <p class="section-subtitle">The pursuits, interests, and curiosities that keep me active, motivated, and engaged.</p>
+          </div>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Interest 1 -->
+          <article class="interest-card">
+            <div class="interest-card-header">
+              <span class="interest-num">01 /</span>
+              <span class="interest-emoji">🏏</span>
+            </div>
+            <h3 class="interest-name">Sports &amp; Cricket</h3>
+            <p class="interest-desc">
+              Whether on the cricket pitch or in physical training, sports are my ultimate source of energy, focus, and camaraderie. 
+              I value the strategic chess game of fielding placements, bowling plans, and partnership building.
+            </p>
+            <div class="interest-tag-list">
+              <span class="interest-tag">Match Strategy</span>
+              <span class="interest-tag">Fitness</span>
+              <span class="interest-tag">Leadership</span>
+            </div>
+          </article>
+
+          <!-- Interest 2 -->
+          <article class="interest-card">
+            <div class="interest-card-header">
+              <span class="interest-num">02 /</span>
+              <span class="interest-emoji">💻</span>
+            </div>
+            <h3 class="interest-name">Emerging Tech &amp; Building</h3>
+            <p class="interest-desc">
+              Fascinated by how modern software tools, operating system kernels, distributed networks, and modern frameworks come together. 
+              I love tinkering with new developer tools and building functional solutions from scratch.
+            </p>
+            <div class="interest-tag-list">
+              <span class="interest-tag">System Design</span>
+              <span class="interest-tag">Open Source</span>
+              <span class="interest-tag">Full Stack</span>
+            </div>
+          </article>
+
+          <!-- Interest 3 -->
+          <article class="interest-card">
+            <div class="interest-card-header">
+              <span class="interest-num">03 /</span>
+              <span class="interest-emoji">🌐</span>
+            </div>
+            <h3 class="interest-name">Geopolitics &amp; World Affairs</h3>
+            <p class="interest-desc">
+              Keen observer of global diplomacy, economic corridors, global semiconductor supply chains, and how technology sovereignty influences modern international relations.
+            </p>
+            <div class="interest-tag-list">
+              <span class="interest-tag">Global Trade</span>
+              <span class="interest-tag">Diplomacy</span>
+              <span class="interest-tag">Macro Strategy</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div><p class="section-label"><span>07</span> CONTACT</p><h2 id="contact-title">Good things start<br>with a <span class="serif-accent">conversation.</span></h2><p>Want to talk tech, sport, or an interesting idea?<br>Explore my work and connect with me on GitHub.</p></div>
-        <a class="contact-button" href="https://github.com/Suryansh102-singh" target="_blank" rel="noopener noreferrer"><span>LET'S CONNECT</span><strong>GitHub <span aria-hidden="true">↗</span></strong><span class="github-handle">@Suryansh102-singh</span></a>
+    <!-- SECTION 07: CONTACT & CONNECT -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-badge">
+          <span class="badge-num">07</span>
+          <span class="badge-title">GET IN TOUCH</span>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Text Content -->
+          <div class="contact-copy">
+            <h2 class="section-title" id="contact-title">
+              Good things start<br>
+              with a <span class="serif-accent">conversation.</span>
+            </h2>
+            <p class="contact-intro">
+              Whether you want to discuss technology, software architecture, cricket, or exciting project ideas &mdash; my inbox and channels are always open.
+            </p>
+
+            <div class="contact-meta-list">
+              <div class="contact-meta-item">
+                <span class="meta-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Manipal, Karnataka, India</p>
+                </div>
+              </div>
+              <div class="contact-meta-item">
+                <span class="meta-icon">🎓</span>
+                <div>
+                  <strong>Institution</strong>
+                  <p>Manipal Institute of Technology (MAHE)</p>
+                </div>
+              </div>
+              <div class="contact-meta-item">
+                <span class="meta-icon">✉️</span>
+                <div>
+                  <strong>Direct Email</strong>
+                  <p id="email-text">suryansh102.singh@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Action Cards Column -->
+          <div class="contact-cards">
+            <!-- Email Action Card with 1-Click Copy -->
+            <div class="contact-card email-card">
+              <div class="card-inner">
+                <div class="card-top">
+                  <span class="card-label">EMAIL ME DIRECTLY</span>
+                  <span class="card-icon-bubble">✉️</span>
+                </div>
+                <h3 class="card-title">suryansh102.singh@gmail.com</h3>
+                <p class="card-subtitle">Feel free to send a message or opportunity anytime.</p>
+                
+                <div class="email-buttons">
+                  <a class="btn btn-primary btn-full" href="mailto:suryansh102.singh@gmail.com">
+                    <span>Send Email</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M2 4l6 4 6-4M2 4h12v8H2V4z"/>
+                    </svg>
+                  </a>
+                  <button class="btn btn-outline btn-copy" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                    <span id="copy-btn-text">Copy Email</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-svg" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Card -->
+            <a class="contact-card social-card" href="https://github.com/Suryansh102-singh" target="_blank" rel="noopener noreferrer">
+              <div class="card-inner">
+                <div class="card-top">
+                  <span class="card-label">CODE REPOSITORY</span>
+                  <svg class="external-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10"/>
+                  </svg>
+                </div>
+                <div class="social-main">
+                  <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <div>
+                    <h3 class="social-name">GitHub</h3>
+                    <p class="social-handle">@Suryansh102-singh</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer"><div class="container footer-row"><p>© 2026 Suryansh Singh</p><p>Built with HTML &amp; CSS <span aria-hidden="true">✳</span></p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a class="footer-brand" href="#home">
+          <span>ss</span><span class="brand-dot">.</span>
+        </a>
+        <p class="footer-copy">&copy; 2026 Suryansh Singh. Built for Web Technology &bull; Hosted on GitHub Pages.</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-tech-tag">HTML5 &bull; CSS3 &bull; Vanilla JS</span>
+      </div>
+
+      <div class="footer-right">
+        <a class="back-to-top" href="#home" aria-label="Back to top of page">
+          <span>Back to top</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="top-arrow" aria-hidden="true">
+            <path d="M8 13V3M3 8l5-5 5 5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy Email -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Interactive Polish Script (Theme, Active Navigation, Copy Email) -->
+  <script src="script.js"></script>
 </body>
 </html>
