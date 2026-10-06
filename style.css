@@ -2061,3 +2061,53 @@ button {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== Post-submission additions ===== */
+
+/* Cricket highlights (Change 5) */
+.fact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+}
+.fact-list li {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Second education card spacing (Change 4c) */
+.education-card + .education-card {
+  margin-top: 1.5rem;
+}
+
+/* Project screenshot (Change 7) */
+.project-shot {
+  margin: 2rem 0 0;
+}
+.project-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+}
+.project-shot figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+/* Footer layout after removing the centre block (Change 9) */
+.site-footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}

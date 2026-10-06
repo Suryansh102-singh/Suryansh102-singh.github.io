@@ -17,7 +17,7 @@ Designed and developed to fulfill all personal profile webpage requirements:
 - **Featured Project**: E-Healthcare Management System (Full-Stack React + Node.js + SQL platform) with direct GitHub repository link.
 - **Honors & Athletics**: State-level cricket representation, highlighting consistency, teamwork, and composure under pressure.
 - **Interests & Hobbies**: Cricket & athletics, emerging technologies & systems, and geopolitics & international relations.
-- **Contact Details & Social Media Links**: Direct email with 1-click copy functionality, mailto link, and GitHub profile link.
+- **Contact Details & Social Media Links**: Direct email with 1-click copy functionality, mailto link, GitHub profile, and LinkedIn network link.
 
 ---
 
@@ -42,9 +42,8 @@ Designed and developed to fulfill all personal profile webpage requirements:
 ├── script.js               # Lightweight progressive enhancement (Theme toggle, copy email, scroll spy)
 ├── assets/
 │   ├── profile.png         # Profile portrait image
+│   ├── er-diagram.png      # E-Healthcare Management System ER diagram
 │   └── favicon.svg         # SVG site icon
-├── checks/
-│   └── responsive.html     # Multi-device iframe responsive preview tool
 ├── .nojekyll               # Disables Jekyll processing on GitHub Pages
 └── README.md               # Project documentation and submission details
 ```
